@@ -1,0 +1,34 @@
+$primary-color: #444;
+$secondary-color: #eece1a;
+$show-home-image: true;
+$home-image: url(../img/background2.jpeg);
+// this how much of the img i can see on the background, you can change it from 0.9 to 0.5
+$background-opacity: 0.9;
+
+@mixin easeOut {
+	transition: all 0.5s ease-out;
+}
+
+@mixin background {
+	@if $show-home-image {
+		&#bg-img {
+			background: $home-image;
+			background-attachment: fixed;
+			background-size: cover;
+
+			//img overlay
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				// to push name infront of the background color
+				//-1 to mack sure img will be push back and text goes upfront
+				z-index: -1;
+				background: rgba($primary-color, $background-opacity);
+			}
+		}
+	}
+}
