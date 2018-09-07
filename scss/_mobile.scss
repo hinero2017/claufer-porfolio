@@ -38,12 +38,26 @@
 		transform: translate3d(100%, 0, 0);
 
 		.portrait {
+			// changing to the smaller size of portrait
 			background: url('../img/portrait.jpg');
 			width: 150px;
 			height: 150px;
+
+			//new twiks
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
 		}
 	}
+
+	//this how to make it small ane nice looking / mobile size
+	.about-info {
+		grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+
+		grid-template-columns: 1fr;
+	}
 }
+
 // Smartphones
 @include mediaSm {
 	main#home h1 {

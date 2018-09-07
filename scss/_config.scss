@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color: #444; //you can try changing it to #fff white color
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background2.jpeg);
@@ -30,6 +30,17 @@ $background-opacity: 0.9;
 				background: rgba($primary-color, $background-opacity);
 			}
 		}
+	}
+}
+
+// Set text Color
+// it has to be a function not a @mixin => cause have to return a color
+// if need to return anything, it has to be a function
+@function set-text-color($color) {
+	@if (lightness($color) > 40) {
+		@return #000;
+	} @else {
+		@return #fff;
 	}
 }
 
