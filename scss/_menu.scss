@@ -68,7 +68,6 @@
 	&-nav {
 		margin: 0;
 		padding: 0;
-		// background: darken($primary-color, 5);
 		background: rgba(darken($primary-color, 5), 0.9);
 		list-style: none;
 		transform: translate3d(0, -100%, 0);
@@ -97,7 +96,7 @@
 		.portrait {
 			width: 250px;
 			height: 250px;
-			background: url(../img/portrait.jpg);
+			background: url(../img/port1.jpeg);
 			//thats a twik to see a full picture
 			background-repeat: no-repeat;
 			background-position: center;

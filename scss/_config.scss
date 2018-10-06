@@ -1,7 +1,8 @@
-$primary-color: #444; //you can try changing it to #fff white color
-$secondary-color: #eece1a;
+$primary-color: #444; //you can try changing it to #fff white color or #444 gray color
+$secondary-color: #00ccff; // #eece1a
 $show-home-image: true;
-$home-image: url(../img/background2.jpeg);
+$home-image: url(../img/backgroundDark.jpeg);
+// ../img/background2.jpeg
 // this how much of the img i can see on the background, you can change it from 0.9 to 0.5
 $background-opacity: 0.9;
 

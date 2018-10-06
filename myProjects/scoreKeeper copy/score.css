@@ -1,0 +1,10 @@
+h2 {
+	color: blueviolet;
+	height: 50px;
+	border: 2px solid violet;
+	padding-left: 50px;
+}
+
+.winner {
+	color: green;
+}

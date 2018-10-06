@@ -81,16 +81,22 @@ main {
 
 // ABOUT page styling
 .about-info {
-	display: grid;
+	display: grid; //grid on the firs place
 	grid-gap: 30px;
 	grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
 	grid-template-columns: repeat(3, 1fr);
 
 	.bio-image {
 		grid-area: bioimage;
-		margin: auto;
+		margin: auto; //auto
+		width: 250px;
+		height: 250px;
+		object-fit: cover; //css auto crop the pic
 		border-radius: 50%;
 		border: $secondary-color 3px solid;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain; //contain
 	}
 
 	.bio {
