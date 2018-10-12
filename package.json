@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "Responsive portfolio website",
 	"main": "index.js",
-	"homepage": "https://hinero2017.github.io/claufer-porfolio",
+	"homepage": "https://hinero2017.github.io/claufer-portfolio",
 	"scripts": {
 		"sass": "node-sass -w scss/ -o dist/css/ --recursive",
 		"deploy": "gh-pages -d dist"
